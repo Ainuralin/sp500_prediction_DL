@@ -394,12 +394,3 @@ This project fulfills **ALL Track 2 requirements**:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
-
-## 📬 Contact
-
-**Ali Ainur**  
-- Telegram: [@yourusername](https://t.me/yourusername)  
-- Email: your.email@example.com  
-- GitHub: [@yourgithub](https://github.com/yourgithub)  
-- Project Link: [https://github.com/yourusername/sp500_prediction_DL](https://github.com/yourusername/sp500_prediction_DL)
