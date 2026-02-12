@@ -318,12 +318,13 @@ sp500_prediction_DL/
 ├── 📄 new.ipynb                 # Complete pipeline
 ├── 📄 README.md                 # You are here
 ├── 📄 requirements.txt          # Dependencies
-├── 📄 .gitignore               # Git ignore rules
+├── 📄 .gitignore                # Git ignore rules
 │
 │
 └── 📊 data/
-    ├── raw/                     # Original FRED CSVs
-    └── processed/              # Engineered features
+    ├── images/                  #graphics              
+    ├── download.py              # Original FRED CSVs
+    └── fred_economic_data.csv   # dataset
 
 ```
 
