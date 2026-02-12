@@ -188,28 +188,6 @@ def predict_with_uncertainty(model, data_loader, n_samples=50):
 | LSTM | 366.1 | 7.68% | 0.695 | 85.7% | ~630 pts |
 | **Transformer** | **121.6** | **3.07%** | **0.966** | **89.2%** | **~240 pts** |
 
-### Visualizations
-
-<p align="center">
-  <img src="results/lstm_predictions.png" width="45%">
-  <img src="results/transformer_predictions.png" width="45%">
-  <br>
-  <em>Left: LSTM with MC Dropout | Right: Transformer with MC Dropout</em>
-</p>
-
-<p align="center">
-  <img src="results/ablation_study.png" width="70%">
-  <br>
-  <em>Ablation Study: Transformer vs LSTM variants</em>
-</p>
-
-<p align="center">
-  <img src="results/training_history.png" width="70%">
-  <br>
-  <em>Training History: Faster convergence for Transformer</em>
-</p>
-
----
 
 ## 🔬 Ablation Study
 
@@ -337,40 +315,16 @@ print(f"Avg CI Width: {uncertainty_results['ci_upper'] - uncertainty_results['ci
 ```
 sp500_prediction_DL/
 │
-├── 📄 main.py                    # Complete pipeline
+├── 📄 new.ipynb                 # Complete pipeline
 ├── 📄 README.md                 # You are here
 ├── 📄 requirements.txt          # Dependencies
 ├── 📄 .gitignore               # Git ignore rules
-├── 📄 project_results.json     # Saved metrics
 │
-├── 🧠 models/
-│   ├── best_LSTM_Model.pth        # Trained LSTM weights
-│   └── best_Transformer_Model.pth # Trained Transformer weights
 │
-├── 📊 data/
-│   ├── raw/                     # Original FRED CSVs
-│   └── processed/              # Engineered features
-│
-├── 📈 results/
-│   ├── lstm_predictions.png      # LSTM uncertainty plot
-│   ├── transformer_predictions.png # Transformer uncertainty plot
-│   ├── ablation_study.png        # Model comparison
-│   ├── training_history.png      # Loss curves
-│   ├── feature_importance.png    # Top features
-│   └── correlation_heatmap.png   # Feature correlations
-│
-├── 🔧 code/
-│   ├── data_processor.py        # FREDDataProcessor class
-│   ├── models.py                # EconomicLSTM & EconomicTransformer
-│   ├── trainer.py               # EconomicForecastTrainer class
-│   ├── uncertainty.py           # MC Dropout implementation
-│   ├── evaluation.py            # Metrics and visualization
-│   └── utils.py                 # Helper functions
-│
-└── 📓 notebooks/
-    ├── 01_EDA.ipynb             # Exploratory analysis
-    ├── 02_LSTM.ipynb           # LSTM experiments
-    └── 03_Transformer.ipynb    # Transformer experiments
+└── 📊 data/
+    ├── raw/                     # Original FRED CSVs
+    └── processed/              # Engineered features
+
 ```
 
 ---
