@@ -26,7 +26,6 @@ Deep learning pipeline comparing **Transformer vs LSTM** architectures with **Mo
 - [Project Structure](#-project-structure)
 - [Requirements Met](#-requirements-met)
 - [Future Work](#-future-work)
-- [Contact](#-contact)
 
 ---
 
